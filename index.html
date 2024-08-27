@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Formulário</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Formulário Vetores</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Trabalhando com Vetores</h1>
-	<form id="formulario">
-		<label for="valor">Digite um valor de cada vez:</label>
-		<input type="text" id="valor"><br>
-		<br>
- <button type="button" id="add-btn" onclick="adicionarValor()">Adicionar Valor</button>
- <table id="tabelaValores">
-	 <thead>
-		 <tr>
-			 <th>Valores</th>
-		 </tr>
-   </thead>
-	  <tbody>
-			  <!-- Valores adicinados aparecerão aqui -->
-			</tbody>
-	</table>
+  <h1>Usando vetores</h1>
 
-<button type="btn" id="add-btn" onclick="NumerosPares()">Mostrar números pares</button>
-	<table id="tabelaPares">
-		<thead>
-			<tr>
-				<th>Números Pares</th>
-			</tr>
-		</thead>
-		 <tbody>
-				 <!-- Números Pares aparecerão aqui -->
-			 </tbody>
+  <form id="formulario">
 
-	 </table>
+    <label for="valor">Digite um valor:</label>
+    <input type="text" id="valor"><br>
+    <button type="button" id="add-btn" onclick="adicionarValor()">Adicionar Valor</button>
+	
+    <table id="tabelaValores">
+      <thead>
+        <tr>
+          <th>Valores</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
 
-	</form>
+    <button type="button" id="par-btn" onclick="mostrarPares()">Mostrar números pares</button>
 
-	<script src="js/script.js"></script>
+    <table id="tabelaPares">
+      <thead>
+        <tr>
+          <th>Números Pares</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+	
+  </form>
+  <script src="js/script.js"></script>
 </body>
 </html>
